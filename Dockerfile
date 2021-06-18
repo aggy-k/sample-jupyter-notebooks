@@ -4,7 +4,7 @@ RUN pip install pandas numpy seaborn sklearn jupyter-offlinenotebook
 
 RUN mkdir data
 COPY --chown=1000:100 data/country_vaccinations.csv data
-COPY --chown=1000:100 ["./recap.ipynb", "."]
+COPY --chown=1000:100 ["./excel.ipynb", "."]
 
 # ./work is found inside official jupyter images, we avoid unnecessary nesting
 RUN rm -rf ./work
