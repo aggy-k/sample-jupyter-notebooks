@@ -2,8 +2,7 @@ FROM jupyter/base-notebook:notebook-6.0.0
 
 RUN pip install pandas numpy seaborn sklearn jupyter-offlinenotebook
 
-RUN mkdir clean_data
-RUN mkdir raw_data
+RUN mkdir data
 COPY --chown=1000:100 data/country_vaccinations.csv data
 COPY --chown=1000:100 ["./recap.ipynb", "."]
 
