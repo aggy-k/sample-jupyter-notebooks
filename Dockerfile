@@ -7,6 +7,7 @@ RUN mkdir data
 COPY --chown=1000:100 data/ecommerce.csv data
 # COPY --chown=1000:100 ["./excel.ipynb", "."]
 COPY --chown=1000:100 ["./workshop.ipynb", "."]
+COPY --chown=1000:100 ["./workshop_today.ipynb", "."]
 # COPY --chown=1000:100 ["./workshop_test_run.ipynb", "."]
 
 # ./work is found inside official jupyter images, we avoid unnecessary nesting
