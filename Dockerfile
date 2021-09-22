@@ -1,6 +1,7 @@
 FROM jupyter/base-notebook:notebook-6.0.0
 
-RUN pip install pandas numpy datetime seaborn sklearn jupyter-offlinenotebook
+# RUN pip install pandas numpy datetime seaborn sklearn jupyter-offlinenotebook
+RUN pip install pandas numpy datetime seaborn jupyter-offlinenotebook
 
 RUN mkdir data
 COPY --chown=1000:100 data/ecommerce.csv data
